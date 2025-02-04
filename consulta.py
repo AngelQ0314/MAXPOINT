@@ -74,9 +74,9 @@ def obtener_datos():
     except Exception as e:
         return {"error": str(e)}
 
-@app.route('/datos', methods=['GET'])
+@app.route('/registros', methods=['GET'])
 def obtener_resultados():
     return jsonify(obtener_datos())
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=3000)
